@@ -13,4 +13,9 @@ public class A {
 			System.out.println("foo");
 		}
 	}
+
+	public void generated_9089953769120238831() {
+		foo();
+		foo();
+	}
 }

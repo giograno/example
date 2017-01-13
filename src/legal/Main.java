@@ -137,8 +137,7 @@ public abstract class Main extends SuperMain {
 		C c = new C();
 		int i = 0;
 		// Select from here
-		c.b.foo();
-		c.b.bar();
+		c.generated_704847988029803735(this);
 		if (b != null) {
 			i = 5;
 		}
@@ -160,11 +159,8 @@ public abstract class Main extends SuperMain {
 				if ("C".equals("D")) {
 					a = new A();
 					return b.c.moreFred();
-				} else if ("A".equals("A")) {
-					return b.c.moreFred();
-				} else {
-					return b.c.fred();
-				}
+				} else
+					return b.generated_5639840960744868062(this);
 			}
 			// to here
 		} catch (Exception e) {
@@ -186,8 +182,7 @@ public abstract class Main extends SuperMain {
 			// Select from here
 			b.c.fred();
 			main.fred();
-			b.c.moreFred();
-			b.foo();
+			b.generated_8391680685262370365(HasMethodThatContainsReferenceToEnclosingInstance.this);
 			// to here
 		}
 	}
@@ -202,26 +197,20 @@ public abstract class Main extends SuperMain {
 			// Select from here
 			b.c.fred();
 			System.out.println(Main.this);
-			b.c.moreFred();
-			b.foo();
+			b.generated_1653433171234170192(HasMethodThatContainsThisReferenceToEnclosingInstance.this);
 			// to here
 		}
 	}
 
 	private String iHaveAConditionalWithAReturnStatement() {
 		// Do not touch me
-		if ("A".equals("B"))
-			return b.c.moreFred();
-		return "NO";
+		return b.generated_3625136352441060720(this);
 	}
 
 	private String iHaveAConditionalWithAnElseAndAllBranchesEndInReturn() {
 		// Do not touch me
 		try {
-			if ("A".equals("B"))
-				return b.c.moreFred();
-			else
-				return b.c.fred();
+			return b.generated_6905808709584343517(this);
 		} catch (Exception e) {
 			System.err.println("finally!");
 		}
@@ -231,7 +220,7 @@ public abstract class Main extends SuperMain {
 	private String iHaveAConditionalWithAnElseAndNotAllBranchesEndInReturn() {
 		// Do not touch me
 		if ("A".equals("B"))
-			return b.c.moreFred();
+			return b.generated_1248195459285459966(this);
 		else
 			System.out.println("fred");
 		return "NO";
@@ -240,17 +229,7 @@ public abstract class Main extends SuperMain {
 	private String iHaveAComplexConditionalWithAnElseAndAllBranchesEndInReturn() {
 		// Do not touch me
 		try {
-			if ("A".equals("B")) {
-				return b.c.moreFred();
-			} else {
-				if ("C".equals("D")) {
-					return b.c.moreFred();
-				} else if ("A".equals("A")) {
-					return b.c.moreFred();
-				} else {
-					return b.c.fred();
-				}
-			}
+			return b.generated_8322222017903134762(this);
 		} catch (Exception e) {
 			System.err.println("finally!");
 		}
@@ -259,16 +238,7 @@ public abstract class Main extends SuperMain {
 
 	private String iHaveAComplexConditionalWithAnElseAndNotAllBranchesEndInReturn() {
 		// Do not touch me
-		if ("A".equals("B")) {
-			if ("C".equals("D")) {
-				return b.c.moreFred();
-			} else if ("A".equals("A")) {
-				return b.c.moreFred();
-			} 
-		} else {
-			return b.c.moreFred();
-		}
-		return "NO";
+		return b.generated_4997462760102217777(this);
 	}
 
 	private String iHaveReturnInsideWhile() {
@@ -277,7 +247,7 @@ public abstract class Main extends SuperMain {
 		while(bool) {
 			if (bool)
 				bool = false;
-			return b.c.moreFred();
+			return b.generated_7586941270265564758(this);
 		}
 		return b.c.moreFred();
 	}
@@ -286,7 +256,7 @@ public abstract class Main extends SuperMain {
 		// Do not touch me
 		for(int i = 0; i < 3; i++) {
 			if (i == 1)
-				return b.c.moreFred();
+				return b.generated_1835535834347878958(this);
 		}
 		return b.c.moreFred();
 	}
@@ -296,7 +266,7 @@ public abstract class Main extends SuperMain {
 		try {
 			System.out.print("test");
 		} catch (Exception e) {
-			return b.c.moreFred();
+			return b.generated_7721547285948236787(this);
 		}
 		return b.c.moreFred();
 	}
@@ -323,7 +293,7 @@ public abstract class Main extends SuperMain {
 				} else {
 					for(int i = 0; i < 3; i++) {
 						if (i == 1)
-							return b.c.moreFred();
+							return b.generated_2943071055761040457(this);
 					}
 					return b.c.fred();
 				}
@@ -354,7 +324,7 @@ public abstract class Main extends SuperMain {
 
 			if ("B".equals("B")) {
 				if ("B".equals("B")) {
-					return b.c.moreFred();
+					return b.generated_1843905736476100572(this);
 				} else {
 					for(int i = 0; i < 3; i++) {
 						if (i == 1)
@@ -449,7 +419,7 @@ public abstract class Main extends SuperMain {
 		// Select from here ...
 		System.out.println("Garbage");
 		if ("B".equals("B"))
-			return b.c.moreFred();
+			return b.generated_9049293091119187326(this);
 		System.out.println("More garbage");
 		// ... to here.
 		return "FOO";
@@ -461,7 +431,7 @@ public abstract class Main extends SuperMain {
 			// Select from here ...
 			System.out.println("Garbage");
 			if ("B".equals("B"))
-				return b.c.moreFred();
+				return b.generated_2895556344167341322(this);
 			System.out.println("More garbage");
 			{
 				return "BAR";
@@ -478,7 +448,7 @@ public abstract class Main extends SuperMain {
 			// Select from here ...
 			System.out.println("Garbage");
 			if ("B".equals("B"))
-				return b.c.moreFred();
+				return b.generated_7433836285919325618(this);
 			System.out.println("More garbage");
 			lbl: {
 				return "BAR";
@@ -495,7 +465,7 @@ public abstract class Main extends SuperMain {
 			// Select from here ...
 			System.out.println("Garbage");
 			if ("B".equals("B"))
-				return b.c.moreFred();
+				return b.generated_4829907889877899283(this);
 			System.out.println("More garbage");
 			int i = 0;
 			do {

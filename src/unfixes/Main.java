@@ -31,16 +31,14 @@ public class Main {
 		TakingB anonymous = new TakingB() {
 			@Override
 			public void foo(B b) {
-				b.foo();
-				b.bar();
+				b.generated_468743218205854153();
 			}
 		};
 	}
 
 	private void hasSimpleNameInNullTest() {
 		if (a != null) {
-			a.foo();
-			a.foo();
+			a.generated_9089953769120238831();
 		}
 	}
 }

@@ -27,4 +27,9 @@ public class C {
 	public String moreFred() {
 		return "More fred!";
 	}
+
+	public void generated_704847988029803735(Main main) {
+		b.foo();
+		b.bar();
+	}
 }

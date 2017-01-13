@@ -6,13 +6,12 @@ public abstract class Main {
 	private void simpleMethod() {
 		// Don't touch me
 		A a = new A();
-		a.b.foo();
+		a.generated_595292087136196277(this);
 	}
 
 	private void testing() {
 		A a = new A();
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_4643039210864900915(this);
 		b.c.a.foo();
 	}
 
@@ -25,8 +24,7 @@ public abstract class Main {
 		B b = new B();
 		a.b.foo();
 		b.c.fred();
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_142529953282392636(this);
 		b.c.fred();
 		return true;
 	}
@@ -64,7 +62,7 @@ public abstract class Main {
 	private String iHaveAConditionalWithAReturnStatement() {
 		// Do not touch me
 		if ("A".equals("B"))
-			return b.c.moreFred();
+			return b.generated_6396592593359859929(this);
 		return "NO";
 	}
 }

@@ -19,8 +19,7 @@ public class Main {
 				TakingB2 anonymous = new TakingB2() {
 					@Override
 					public void bar(B b) {
-						b.foo();
-						b.bar();
+						b.generated_3361901303989811535();
 					}
 				};
 				anonymous.bar(b);
@@ -31,8 +30,7 @@ public class Main {
 	private void iHaveALocalClass() {
 		class ALocalClass {
 			public void foo(B b) {
-				b.foo();
-				b.bar();
+				b.generated_6859332324963400619();
 			}
 		}
 	}
@@ -45,8 +43,7 @@ public class Main {
 			}
 
 			private void bar(C c) {
-				c.b.foo();
-				c.b.bar();
+				c.generated_5592547944458024093(this);
 			}
 		};
 	}

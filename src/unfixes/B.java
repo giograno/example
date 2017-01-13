@@ -17,4 +17,9 @@ public class B {
 	public void foo() {
 		return;
 	}
+
+	public void generated_468743218205854153() {
+		foo();
+		bar();
+	}
 }

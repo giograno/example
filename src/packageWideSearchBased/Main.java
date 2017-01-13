@@ -9,17 +9,16 @@ public abstract class Main {
 	private void simpleMethod() {
 		// Don't touch me
 		A a = new A();
-		a.b.foo();
+		a.generated_4581347205964746668(this);
 	}
 
 	private void testing() {
 		A a = new A();
 		// Duplicate of two lines in searchableMethod
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_811386902157979493(this);
 		b.c.a.foo();
 	}
-	
+
 	private void emptyMethod() {
 		// Keep empty
 	}
@@ -30,12 +29,11 @@ public abstract class Main {
 		a.b.foo();
 		b.c.fred();
 		// Duplicate of two lines in testing
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_4395598232828139146(this);
 		b.c.fred();
 		return true;
 	}
-	
+
 	private void takesArrayParameter(A[] as) {
 		List<A> l = Arrays.asList(as);
 	}

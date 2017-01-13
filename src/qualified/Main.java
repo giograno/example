@@ -10,10 +10,7 @@ public class Main {
 			a.c.d.b.a.b.bar();
 			a = a.c.d.b.a;
 		}
-		a.b.c.d.bar();
-		a.b.c.d.foo();
-		a.b.c.b.bar();
-		a.b.c.b.bar();
+		a.generated_839550697710663472(this);
 		b.c.a.foo();
 	}
 

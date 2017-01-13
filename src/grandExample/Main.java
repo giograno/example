@@ -15,8 +15,7 @@ class C {
 
 		switch (val) {
 		case 1:
-			b.a.foo();
-			b.a.bar();
+			b.generated_9219885326890774116(this);
 			break;
 		default:
 			a.foo();

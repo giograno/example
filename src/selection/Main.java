@@ -6,13 +6,12 @@ public class Main {
 	private void simpleMethod() {
 		// Don't touch me
 		A a = new A();
-		a.b.foo();
+		a.generated_1293044788145306806(this);
 	}
 
 	private void testing() {
 		A a = new A();
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_8672360478122020962(this);
 		b.c.a.foo();
 	}
 
@@ -25,8 +24,7 @@ public class Main {
 		B b = new B();
 		a.b.foo();
 		b.c.fred();
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_6732746596385897607(this);
 		b.c.fred();
 		return true;
 	}
@@ -41,8 +39,7 @@ public class Main {
 		B b = new B();
 		a.b.foo();
 		b.c.fred();
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_6428025074353090706(this);
 		b.c.fred();
 		return true;
 	}
@@ -57,8 +54,7 @@ public class Main {
 			// Must be the first anonymous class in Main for the tests to pass
 			@Override
 			public void foo(B b) {
-				b.foo();
-				b.bar();
+				b.generated_1217752098808237352();
 			}
 		};
 	}
@@ -66,8 +62,7 @@ public class Main {
 	private void iHaveALocalClass() {
 		class ALocalClass {
 			public void foo(B b) {
-				b.foo();
-				b.bar();
+				b.generated_5337467018616092852();
 			}
 		}
 	}

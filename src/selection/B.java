@@ -17,4 +17,14 @@ public class B {
 	public void foo() {
 		return;
 	}
+
+	public void generated_1217752098808237352() {
+		foo();
+		bar();
+	}
+
+	public void generated_5337467018616092852() {
+		foo();
+		bar();
+	}
 }

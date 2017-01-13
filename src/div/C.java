@@ -21,4 +21,9 @@ public class C {
 			System.out.println("more fred");
 		}
 	}
+
+	public void generated_5592547944458024093(TakingB arg) {
+		b.foo();
+		b.bar();
+	}
 }

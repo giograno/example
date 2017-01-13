@@ -17,4 +17,8 @@ public class B {
 	public void foo() {
 		return;
 	}
+
+	public String generated_6396592593359859929(Main main) {
+		return c.moreFred();
+	}
 }

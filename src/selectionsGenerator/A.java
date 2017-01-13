@@ -13,4 +13,9 @@ public class A {
 			System.out.println("foo");
 		}
 	}
+
+	public void generated_4002059432356162902(Main main) {
+		b.c.d.bar();
+		b.c.b.bar();
+	}
 }

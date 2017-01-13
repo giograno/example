@@ -6,8 +6,7 @@ class IContainManyTypes {
 	B b = new B();
 
 	private void foo() {
-		a.c.fred();
-		a.b.foo();
+		a.generated_8200837219513438558(this);
 		b.a.foo();
 	}
 }
@@ -17,8 +16,7 @@ class IAmAnotherType {
 	B b = new B();
 
 	private void foo() {
-		a.c.fred();
-		a.b.foo();
+		a.generated_8633838159666823575(this);
 		b.a.foo();
 	}
 }

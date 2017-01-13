@@ -8,16 +8,12 @@ public class Main {
 	private void simpleStatements() {
 		// Do not touch
 		A a = new A();
-		a.b.c.d.bar();
-		a.b.c.b.bar();
+		a.generated_4002059432356162902(this);
 	}
 
 	private void containingBlock() {
 		// Do not touch
-		{
-			b.c.d.bar();
-			b.c.b.bar();
-		}
+		b.generated_2879817197261847884(this);
 	}
 
 	private void containingDo() {
@@ -27,28 +23,18 @@ public class Main {
 		} while (bool);
 
 		do
-			b.c.d.bar();
+			b.generated_610383947036121620(this);
 		while (bool);
 	}
 
 	private void containingEnhancedFor() {
 		// Do not touch
-		for (String s: new String[] {"1", "2", "3"}) {
-			b.c.b.fred(s);
-		}
-
-		for (String s: new String[] {"1", "2", "3"})
-			b.c.b.fred(s);
+		b.generated_1067620951861296031(this);
 	}
 
 	private void containingFor() {
 		// Do not touch
-		for (int i = 0; i < 5; i++) {
-			b.c.b.fred(i);
-		}
-
-		for (int i = 0; i < 5; i++)
-			b.c.b.fred(i);
+		b.generated_6982042599894958465(this);
 	}
 
 	private void containingIfElse() {
@@ -62,20 +48,14 @@ public class Main {
 		if (bool)
 			b.c.d.bar();
 		else if (!bool)
-			b.c.b.bar();
+			b.generated_6151558631089659853(this);
 		else 
 			b.bar();
 	}
 
 	private void containingLabel() {
 		// Do not touch
-		lbl: 
-		{
-		b.c.d.bar();
-		}
-
-	lbl2:
-		b.bar();
+		b.generated_1288232162613999292(this);
 	}
 
 	private void containingSwitch() {
@@ -98,7 +78,7 @@ public class Main {
 		}
 
 		while (bool)
-			b.c.b.bar();
+			b.generated_914866597916157435(this);
 	}
 
 	//TODO: more complex example?

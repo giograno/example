@@ -4,15 +4,11 @@ public class Main {
 	A a = new A();
 
 	private void withoutSimpleExpressions() {
-		a.b.foo();
-		if (a.b.bool())
-			a.c.fred();
+		a.generated_6193602207250308585(this);
 	}
-	
+
 	private void withSimpleExpression() {
 		B b = new B();
-		a.b.foo();
-		if (a.b.bool())
-			a.c.shit(b);
+		a.generated_1500142738949456808(this, b);
 	}
 }
